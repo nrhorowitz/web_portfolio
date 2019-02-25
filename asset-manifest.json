@@ -1,14 +1,14 @@
 {
-  "main.css": "/portfolio/static/css/main.298009a7.chunk.css",
-  "main.js": "/portfolio/static/js/main.4592a557.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.4592a557.chunk.js.map",
-  "runtime~main.js": "/portfolio/static/js/runtime~main.0fad4c0f.js",
-  "runtime~main.js.map": "/portfolio/static/js/runtime~main.0fad4c0f.js.map",
-  "static/js/2.ba1ca5ba.chunk.js": "/portfolio/static/js/2.ba1ca5ba.chunk.js",
-  "static/js/2.ba1ca5ba.chunk.js.map": "/portfolio/static/js/2.ba1ca5ba.chunk.js.map",
-  "index.html": "/portfolio/index.html",
-  "precache-manifest.9c6e3013b1859a96835c9a395453c296.js": "/portfolio/precache-manifest.9c6e3013b1859a96835c9a395453c296.js",
-  "service-worker.js": "/portfolio/service-worker.js",
-  "static/css/main.298009a7.chunk.css.map": "/portfolio/static/css/main.298009a7.chunk.css.map",
-  "static/media/logo.svg": "/portfolio/static/media/logo.5d5d9eef.svg"
+  "main.css": "/pollar/static/css/main.5702aec4.chunk.css",
+  "main.js": "/pollar/static/js/main.db768e08.chunk.js",
+  "main.js.map": "/pollar/static/js/main.db768e08.chunk.js.map",
+  "runtime~main.js": "/pollar/static/js/runtime~main.19223d1c.js",
+  "runtime~main.js.map": "/pollar/static/js/runtime~main.19223d1c.js.map",
+  "static/js/2.ba1ca5ba.chunk.js": "/pollar/static/js/2.ba1ca5ba.chunk.js",
+  "static/js/2.ba1ca5ba.chunk.js.map": "/pollar/static/js/2.ba1ca5ba.chunk.js.map",
+  "index.html": "/pollar/index.html",
+  "precache-manifest.eed2551cf121e9280af83eb657cb44b0.js": "/pollar/precache-manifest.eed2551cf121e9280af83eb657cb44b0.js",
+  "service-worker.js": "/pollar/service-worker.js",
+  "static/css/main.5702aec4.chunk.css.map": "/pollar/static/css/main.5702aec4.chunk.css.map",
+  "static/media/logo.svg": "/pollar/static/media/logo.5d5d9eef.svg"
 }
