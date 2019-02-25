@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pollar/precache-manifest.73157b588dcb6d4b595f9bf9dd8e5538.js"
+  "/pollar/precache-manifest.f9604bd121ffc305a0b306de1e767253.js"
 );
 
 workbox.clientsClaim();
