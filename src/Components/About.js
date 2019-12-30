@@ -25,20 +25,13 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>Hi I'm Nathan owo</p>
+            <p>Hi I'm Nathan. I am an aspiring web developer and amatuer photographer. Check out my projects below!</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>Nathan Horowitz</span><br />
-                     <span>nhorowitz@berkeley.edu</span><br />
-                     <span>nathan.s.horowitz@gmail.com</span>
+						   <span>Fill out the contact form below!</span>
 					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
                </div>
             </div>
          </div>

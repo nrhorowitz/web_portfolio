@@ -43,30 +43,42 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of California, Berkeley",
+        "degree":"Computer Science and Applied Mathematics",
+        "graduated":"August 2018 - May 2021",
+        "description":"CS61A - Structure and Interpretation of Computer Programs, 61B - Data Stuctures, 61C - Great Ideas in Computer Architecture (Machine Structures), CS170 - Efficient Algorithms and Intractable Problems, MATH53 - Multivariable Calculus, MATH110 - Linear Algebra, EE16B - Designing Information Devices and Systems II"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Foothill College, Los Altos Hills",
+        "degree":"Associate (partial)",
+        "graduated":"August 2016 - August 2018",
+        "description":"CS1A - Object Oriented Programming Methodologies in Java, CS1B - Intermediate Software Design in Java, CS1C - Advanced Data Structures & Algorithms in Java, CS10 - Computer Architecture"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"TravelFam, San Francisco",
+        "title":"Full Stack Developer Intern",
+        "years":"June 2019 - December 2019",
+        "description":"Worked with a small team to create a travelshare app for web and mobile, created react implementation from scratch. Implemented React / React-Redux / React Router to create fluid transitions with responsive ui, connected with Firebase backend, security, and hosting, token based authentication."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"UC Berkeley Course Staff, Berkeley",
+        "title":"Lab Assistant",
+        "years":"January 2019 - December 2019",
+        "description":"Member of CS61A staff, contributed to running class logistics, assisted with office hours, guerilla sections"
+      },
+      {
+        "company":"Startup Wonder, Palo Alto",
+        "title":"Instuctor",
+        "years":"June 2016 - August 2018",
+        "description":"Taught App Design, Android Game Design, and Python programming to Elementary School students"
+      },
+      {
+        "company":"Wizbots, Mountain View",
+        "title":"Summer Camp Assistant",
+        "years":"June 2016 - August 2018",
+        "description":"Taught Java and Robotics Design to Elementary School students"
       }
     ],
     "skills":[

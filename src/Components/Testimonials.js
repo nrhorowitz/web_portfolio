@@ -1,38 +1,46 @@
 import React, { Component } from 'react';
+import Album from './Album.js';
+import firebase from '../Components/Firebase';
 
 class Testimonials extends Component {
-  render() {
+   constructor(props) {
+      super(props);
+      this.state = {
 
-    if(this.props.data){
-      var testimonials = this.props.data.testimonials.map(function(testimonials){
-        return  <li key={testimonials.user}>
-            <blockquote>
-               <p>{testimonials.text}</p>
-               <cite>{testimonials.user}</cite>
-            </blockquote>
-         </li>
-      })
-    }
+      }
+   }
 
-    return (
-      <section id="testimonials">
-      <div className="text-container">
-         <div className="row">
+   componentWillMount() {
+      const imagesRef = firebase.storage().ref();
+      // Find all the prefixes and items.
+      imagesRef.listAll().then((res) => {
+        res.prefixes.forEach((folderRef) => {
+           console.log(folderRef)
+          // All the prefixes under listRef.
+          // You may call listAll() recursively on them.
+        });
+        res.items.forEach((itemRef) => {
+           console.log(itemRef)
+          // All the items under listRef.
+        });
+      }).catch((error) => {
+         console.log(error)
+        // Uh-oh, an error occurred!
+      });
+      console.log('log')
+   }
 
-            <div className="two columns header-col">
-               <h1><span>Client Testimonials</span></h1>
-            </div>
-
-            <div className="ten columns flex-container">
-                  <ul className="slides">
-                      {testimonials}
-                  </ul>
+   render() {
+      return (
+         <section id="testimonials">
+            <div className="text-container">
+               <div className="row">
+                  <Album></Album>
                </div>
             </div>
-         </div>
-   </section>
-    );
-  }
+         </section>
+      );
+   }
 }
 
 export default Testimonials;
