@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   cardMedia: {
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '170%', // 16:9
   },
   cardContent: {
     flexGrow: 1,
@@ -57,9 +57,15 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const cards = [1, 2];
-
-export default function Album() {
+export default function Album(props) {
+  const cards = props.keys;
+  const imageUrlLists = {};
+  for (var i in cards) {
+    const imageUrls = props.data('images', cards[i])['imageUrls'];
+    const randIndex = parseInt(Math.random() * imageUrls.length);
+    imageUrlLists[cards[i]] = imageUrls[randIndex];
+  }
+  console.log(imageUrlLists);
   const classes = useStyles();
 
   return (
@@ -70,12 +76,16 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={6}>
-                <Card className={classes.card}>
+              <Grid item key={card} xs={12} sm={4} md={4}>
+                <Card 
+                  className={classes.card}
+                  onMouseEnter={()=>props.resolveEvent("MouseEnter", card)}
+                  onMouseLeave={()=>props.resolveEvent("MouseExit", card)}
+                >
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
+                    image={imageUrlLists[card]}
+                    title={card}
                   />
                 </Card>
               </Grid>

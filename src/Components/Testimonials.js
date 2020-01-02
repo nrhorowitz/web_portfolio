@@ -1,45 +1,55 @@
 import React, { Component } from 'react';
 import Album from './Album.js';
-import firebase from '../Components/Firebase';
+import Loading from './Loading';
 
+var keys = ['food', 'nature', 'object', 'urban'];
 class Testimonials extends Component {
    constructor(props) {
       super(props);
       this.state = {
+         imageHeaderData: [],
+      }
+      this.renderReady = this.renderReady.bind(this);
+      this.resolveEvent = this.resolveEvent.bind(this);
+   }
 
+   renderReady() {
+      for (var i = 0; i < keys.length; i += 1) {
+         if (!this.props.data('images', keys[i])) {
+            return false;
+         }
+      }
+      return true;
+   }
+
+   resolveEvent(type, var1=false) {
+      if (type === "MouseEnter") {
+         console.log("enter", var1);
+      } else if (type === "MouseExit") {
+         console.log("exit", var1)
       }
    }
 
-   componentWillMount() {
-      const imagesRef = firebase.storage().ref();
-      // Find all the prefixes and items.
-      imagesRef.listAll().then((res) => {
-        res.prefixes.forEach((folderRef) => {
-           console.log(folderRef)
-          // All the prefixes under listRef.
-          // You may call listAll() recursively on them.
-        });
-        res.items.forEach((itemRef) => {
-           console.log(itemRef)
-          // All the items under listRef.
-        });
-      }).catch((error) => {
-         console.log(error)
-        // Uh-oh, an error occurred!
-      });
-      console.log('log')
-   }
-
    render() {
-      return (
-         <section id="testimonials">
-            <div className="text-container">
-               <div className="row">
-                  <Album></Album>
+      if (this.renderReady()) {
+         return (
+            <section id="testimonials">
+               <div className="text-container">
+                  <div className="row">
+                     <Album 
+                        keys={keys}
+                        data={this.props.data}
+                        resolveEvent={this.resolveEvent}
+                     />
+                  </div>
                </div>
-            </div>
-         </section>
-      );
+            </section>
+         );
+      } else {
+         return (
+            <Loading/>
+         )
+      }
    }
 }
 
